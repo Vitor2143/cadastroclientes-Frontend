@@ -1,15 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./screens/home.js";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./screens/home";
 import ListUsers from "./screens/listusers";
 
-export default function Rota(){
+export default function Routes(){
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="/" exact element={<Home/>} />
-                <Route path="/allusers" element={<ListUsers/>} />
-            </Routes>
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/allusers" component={ListUsers} />
+            </Switch>
         </BrowserRouter>
-    );}
-
+    );
+}

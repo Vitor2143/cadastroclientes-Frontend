@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Rota from './routes.js';
+import Routes from './routes';
 
 function App() {
   return (
     <div className="App">
-      <Rota />
+      <Routes />
     </div>
   );
 }
